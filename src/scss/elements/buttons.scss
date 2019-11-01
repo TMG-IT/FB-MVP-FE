@@ -1,0 +1,51 @@
+.btn {
+  cursor: pointer;
+  font-family: $font-family-secondary;
+  display: block;
+  position: relative;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 100%;
+  padding: 8px 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include font-size(button);
+  letter-spacing: -0.5px;
+
+  &--primary {
+    background-color: $color-highlight;
+    color: $color-white;
+    border-radius: 7px;
+    text-align: center;
+    &:hover {
+      background-color: $color-board;
+    }
+  }
+  &--secondary {
+    background-color: transparent;
+    color: $color-txt-primary;
+    padding: 0;
+    line-height: 16px;
+    // font-family: $font-family-primary;
+    text-decoration: underline;
+
+    &:hover {
+      color: $color-highlight;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+}
+
+button:disabled  {
+  background-color: $color-disabled;
+  cursor: none;
+  pointer-events: none;
+}

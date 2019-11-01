@@ -1,0 +1,40 @@
+/***********************
+* BASE
+***********************/
+@import "scss/base/1-reset",
+        "scss/base/2-fonts",
+        "scss/base/3-colors",
+        "scss/base/4-z_indexes",
+        "scss/base/5-breakpoints",
+        "scss/base/6-layout-grid",
+        "scss/base/7-containers",
+        "scss/base/8-mixins",
+        "scss/base/9-styleguide";
+
+/***********************
+* COMPONENTS Predefined components
+***********************/
+@import "scss/components/header",
+        "scss/components/chatBot",
+        "scss/components/subscribe",
+        "scss/components/finish";
+
+
+/***********************
+* BLOCKS
+***********************/
+@import "scss/blocks/chatBot",
+        "scss/blocks/sessionCode",
+        "scss/blocks/invalidSession",
+        "scss/blocks/welcome",
+        "scss/blocks/confirmation",
+        "scss/blocks/subscribe",
+        "scss/blocks/popup",
+        "scss/blocks/finish";
+
+
+/***********************
+* ELEMENTS
+***********************/
+@import "scss/elements/buttons",
+        "scss/elements/title";

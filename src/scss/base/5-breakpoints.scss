@@ -1,0 +1,45 @@
+$break-xs: 480px;
+$break-sm: 600px;
+$break-md: 900px;
+$break-lg: 1200px;
+$break-xl: 1600px;
+$break-xxl: 1800px;
+
+$breakpoints: (
+  xs: $break-xs,
+  sm: $break-sm,
+  md: $break-md,
+  lg: $break-lg,
+  xl: $break-xl
+);
+
+/* --------------------------------
+    Media query function.
+-------------------------------- */
+@function breakpoint($breakpoint) {
+  @return map-get($breakpoints, $breakpoint);
+}
+
+
+$media-queries: (
+  xs: '(min-width: #{breakpoint(xs)})',
+  sm: '(min-width: #{breakpoint(sm)})',
+  md: '(min-width: #{breakpoint(md)})',
+  lg: '(min-width: #{breakpoint(lg)})',
+  xl: '(min-width: #{breakpoint(xl)})',
+  xxl: '(min-width: #{breakpoint(xxl)})',
+  xs-max: '(max-width: #{breakpoint(xs)})',
+  sm-max: '(max-width: #{breakpoint(sm)})',
+  md-max: '(max-width: #{breakpoint(md)})',
+  lg-max: '(max-width: #{breakpoint(lg)})',
+  xl-max: '(max-width: #{breakpoint(xl)})'
+);
+
+/* --------------------------------
+    Media query mixin. Ignore error in this mixin.
+-------------------------------- */
+@mixin media($query) {
+  @media screen and #{inspect(map-get($media-queries, $query))} {
+    @content;
+  }
+}

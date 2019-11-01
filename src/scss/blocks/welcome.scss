@@ -1,0 +1,68 @@
+.b-welcome {
+  height: calc(100vh - 76px);
+  height: calc((var(--vh, 1vh) * 100) - 76px);
+  min-height: calc(100vh - 76px);
+  min-height: calc((var(--vh, 1vh) * 100) - 76px);
+  position: relative;
+
+  @include media(sm) {
+    height: initial;
+    display: initial;
+  }
+
+  &__title {
+    padding-top: 65px;
+
+    @media only screen and (max-height: 600px)  {
+      padding-top: 30px;
+    }
+
+    @media only screen and (max-height: 500px)  {
+      padding-top: 15px;
+    }
+
+    @include media(md) {
+      padding-top: 120px;
+    }
+  }
+
+  &__txt {
+    margin-top: 35px;
+    width: 90%;
+
+    @media only screen and (max-height: 600px)  {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    @media only screen and (max-height: 500px)  {
+      margin-top: 25px;
+      width: 100%;
+
+      &:nth-of-type(2) {
+        margin-top: 10px;
+      }
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .btn {
+    margin-top: 75px;
+    width: 100%;
+
+    @media (orientation:  portrait) {
+      margin-top: auto;
+      position: absolute;
+      bottom: 15px;
+    }
+
+    @include media(sm) {
+      margin-top: 94px;
+      margin-bottom: inherit;
+      position: inherit;
+    }
+  }
+}

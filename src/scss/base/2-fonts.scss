@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: url('./../../assets/fonts/GothamPro.eot') format('eot'),
+    url('./../../assets/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+    url('./../../assets/fonts/GothamPro.woff2') format('woff2'),
+    url('./../../assets/fonts/GothamPro.woff') format('woff'),
+    url('./../../assets/fonts/GothamPro.ttf') format('truetype');
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamProBla';
+  src: url('./../../assets/fonts/GothamProBla.eot') format('eot'),
+    url('./../../assets/fonts/GothamProBla.eot?#iefix')
+      format('embedded-opentype'),
+    url('./../../assets/fonts/GothamProBla.woff2') format('woff2'),
+    url('./../../assets/fonts/GothamProBla.woff') format('woff'),
+    url('./../../assets/fonts/GothamProBla.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'GothamProMed';
+  src: url('./../../assets/fonts/GothamProMed.eot') format('eot'),
+    url('./../../assets/fonts/GothamProMed.eot?#iefix')
+      format('embedded-opentype'),
+    url('./../../assets/fonts/GothamProMed.woff2') format('woff2'),
+    url('./../../assets/fonts/GothamProMed.woff') format('woff'),
+    url('./../../assets/fonts/GothamProMed.ttf') format('truetype');
+  font-weight: 500;
+}
+
+$font-family-primary: 'GothamPro';
+$font-family-secondary: 'GothamProMed';
+$font-family-bold: 'GothamProBla';
+
+$font-weight-normal: normal;
+$font-weight-medium: 500;
+$font-weight-black: 900;

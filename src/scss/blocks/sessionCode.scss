@@ -1,0 +1,96 @@
+.b-sessionCode {
+  height: calc(100vh - 76px);
+  height: calc((var(--vh, 1vh) * 100) - 76px);
+  min-height: calc(100vh - 76px);
+  min-height: calc((var(--vh, 1vh) * 100) - 76px);
+  position: relative;
+
+  @include media(sm) {
+    height: initial;
+    display: initial;
+  }
+
+  * {
+    text-align: left;
+  }
+
+  &__title {
+    padding-top: 65px;
+
+    @media only screen and (max-height: 600px)  {
+      padding-top: 30px;
+    }
+
+    @include media(md) {
+      padding-top: 120px;
+    }
+  }
+
+  &__txt {
+    margin-top: 35px;
+    width: 90%;
+
+    @include media(md) {
+      margin-top: 35px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 15px;
+    margin-top: 35px;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid $color-board;
+    border-radius: 2px;
+
+    @media only screen and (max-height: 600px)  {
+      margin-top: 25px;
+    }
+
+    @include media(md) {
+      margin-top: 65px;
+    }
+
+    &--error{
+      border: 1px solid $color-error;
+    }
+
+// Turn Off Number Input Spinners
+    &[type=number]::-webkit-inner-spin-button,
+    &[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type='number'] {
+        -moz-appearance: textfield;
+    }
+  }
+
+  &__error{
+    color: $color-error;
+    margin-top: 8px;
+    @include font-size(small);
+    letter-spacing: 0.5px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 75px;
+    margin-top: auto;
+    position: absolute;
+    bottom: 15px;
+
+    @media (orientation:  landscape) {
+      position: inherit;
+      margin-top: 75px;
+    }
+
+    @include media(sm) {
+      margin-top: 125px;
+      margin-bottom: inherit;
+      position: inherit;
+    }
+  }
+}

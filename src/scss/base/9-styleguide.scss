@@ -1,0 +1,140 @@
+/* --------------------------------
+Site wide variables
+-------------------------------- */
+$site-bg: $color-white;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$font-weight-base: $font-weight-normal;
+$site-header-height-mobile: 80px;
+$site-header-height: 105px;
+$input-height: 45px;
+$textarea-height: 162px;
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-color: $site-bg;
+  font-family: $font-family-primary;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-txt-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  -ms-overflow-x: hidden;
+  -ms-scroll-limit-x-max: 0;
+}
+
+:focus {
+  outline: none;
+}
+
+::selection {
+  background: $color-black;
+  color: $color-white;
+}
+
+a {
+  color: $color-txt-primary;
+  text-decoration: none;
+  display: inline-block;
+  transition: all .25s ease;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+/* --------------------------------
+Font sizes
+-------------------------------- */
+$font-sizes:
+  (h1: (null: (34, 38), sm: (34, 38), md: (34, 38)),
+  h2: (null: (26, 36), md: (50, 60)),
+  h3: (null: (22, 26)),
+  h4: (null: (16, 26), md: (26, 36)),
+  h5: (null: (14, 12)),
+  h6: (null: (14, 12)),
+  small: (null: (11, 14)),
+  p: (null: (18, 26)),
+  button: (null: (16, 36)),
+  input: (null: (14, 24)));
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: $font-family-bold;
+  font-weight: $font-weight-black;
+}
+
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: $font-weight-normal;
+}
+
+h1 {
+  @include font-size(h1);
+}
+
+h2 {
+  @include font-size(h2);
+}
+
+h3 {
+  @include font-size(h3);
+}
+
+h4 {
+  @include font-size(h4);
+}
+
+h5 {
+  @include font-size(h5);
+}
+
+h5 {
+  @include font-size(h5);
+}
+
+p {
+  font-weight: $font-weight-normal;
+  color: $color-txt-primary;
+  @include font-size(p);
+}
+
+input {
+  outline: none;
+  @include font-size(input);
+}
+
+/* Autocomplete background color */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+
+/* --------------------------------
+Spaces
+-------------------------------- */
+$space-xxs: 10px;
+$space-xs: 15px;
+$space-s: 20px;
+$space-m: 30px;
+$space-l: 45px;
+$space-xl: 75px;
+$space-xxl: 90px;

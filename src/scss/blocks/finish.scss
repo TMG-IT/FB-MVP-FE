@@ -1,0 +1,26 @@
+.b-finish {
+
+  &__title {
+    color: $color-white;
+  }
+
+  &__txt {
+    margin-top: 35px;
+    color: $color-white;
+  }
+
+  .btn {
+    margin-top: 85px;
+    color: $color-white;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    padding: 55px;
+
+    @include media(md) {
+      padding: 120px 0 85px;
+    }
+  }
+}

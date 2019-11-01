@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>icons8-checked</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03_Confirmation_Finish" transform="translate(-140.000000, -141.000000)" fill-rule="nonzero">
+            <g id="icons8-checked" transform="translate(140.000000, 141.000000)">
+                <g id="Group-2">
+                    <path d="M40,20 C40,31.045 31.045,40 20,40 C8.955,40 0,31.045 0,20 C0,8.955 8.955,0 20,0 C31.045,0 40,8.955 40,20 Z" id="Path" fill="#2DD700"></path>
+                    <polygon id="Path" fill="#FFFFFF" points="30.586 10.586 17.016 24.172 11.414 18.586 8.586 21.414 17.02 29.828 33.415 13.414"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

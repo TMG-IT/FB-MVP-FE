@@ -1,0 +1,26 @@
+.b-invalidSession {
+
+  &__title {
+    margin-top: 65px;
+
+    @include media(md) {
+      margin-top: 120px;
+    }
+  }
+
+  &__txt {
+    margin-top: 35px;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .btn {
+    margin-top: 65px;
+
+    @include media(md) {
+      margin-top: 80px;
+    }
+  }
+}

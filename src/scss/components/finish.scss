@@ -1,0 +1,8 @@
+.c-finish {
+  background-color: $color-board;
+  height: calc(100vh - 76px);
+
+  @include media(md) {
+    height: calc(100vh - 106px);
+  }
+}

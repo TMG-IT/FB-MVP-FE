@@ -1,0 +1,37 @@
+// $container-base: 1170px;
+$container-base: 1440px;
+$container-m: 678px;
+$container-s: 385px;
+
+.container-s {
+  max-width: $container-s;
+  padding: 0 $grid-gap;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media(md) {
+    padding: 0
+  }
+}
+
+.container-m {
+  max-width: $container-m;
+  padding: 0 $grid-gap;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media(md) {
+    padding: 0
+  }
+}
+
+.container-lg {
+  max-width: $container-base;
+  padding: 0 $grid-gap;
+  width: 100%;
+  margin: 0 auto;
+
+  @include media(md) {
+    padding: 0
+  }
+}
